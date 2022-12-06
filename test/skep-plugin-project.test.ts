@@ -4,9 +4,8 @@ test('ProjenProject', () => {
   const project = new SkepPluginProject({
     name: 'foo-project',
     defaultReleaseBranch: 'main',
-    author: 'Foo Bar',
-    authorAddress: 'foo.bar@example.com',
-    repositoryUrl: 'url',
+    cdktfProviderPackage: '@cdktf/github-provider',
+    cdktfProviderPackageVersion: '~3',
   });
   const fileNames = project.files.map(_ => _.path);
   ['.projen/tasks.json'].forEach(fileName => {
