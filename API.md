@@ -3,12 +3,12 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SkepPluginProjectOptions <a name="SkepPluginProjectOptions" id="skep-plugin-project.SkepPluginProjectOptions"></a>
+### SkepPluginProjectOptions <a name="SkepPluginProjectOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions"></a>
 
-#### Initializer <a name="Initializer" id="skep-plugin-project.SkepPluginProjectOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.Initializer"></a>
 
 ```typescript
-import { SkepPluginProjectOptions } from 'skep-plugin-project'
+import { SkepPluginProjectOptions } from '@skeptools/skep-plugin-project'
 
 const skepPluginProjectOptions: SkepPluginProjectOptions = { ... }
 ```
@@ -17,144 +17,144 @@ const skepPluginProjectOptions: SkepPluginProjectOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcOptions</code> | Options for .projenrc.json. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.mergify">mergify</a></code> | <code>boolean</code> | Whether mergify should be enabled on this repository or not. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.mergifyOptions">mergifyOptions</a></code> | <code>projen.github.MergifyOptions</code> | Options for mergify. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | Which type of project this is (library/app). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenTokenSecret">projenTokenSecret</a></code> | <code>string</code> | The name of a secret which includes a GitHub Personal Access Token to be used by projen workflows. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.npmRegistry">npmRegistry</a></code> | <code>string</code> | The host name of the npm registry to publish to. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.scripts">scripts</a></code> | <code>{[ key: string ]: string}</code> | npm scripts to include. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseEveryCommit">releaseEveryCommit</a></code> | <code>boolean</code> | Automatically release new versions every commit to one of branches in `releaseBranches`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseSchedule">releaseSchedule</a></code> | <code>string</code> | CRON schedule to trigger new releases. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. Useful if you are releasing on multiple branches with overlapping version numbers. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with @codeCovTokenSecret. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.npmignore">npmignore</a></code> | <code>string[]</code> | Additional entries to .npmignore. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflow">releaseWorkflow</a></code> | <code>boolean</code> | DEPRECATED: renamed to `release`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenrcTs">projenrcTs</a></code> | <code>boolean</code> | Use TypeScript for your projenrc file (`.projenrc.ts`). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.sampleCode">sampleCode</a></code> | <code>boolean</code> | Generate one-time sample in `src/` and `test/` if there are no files there. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. Tests files should be named `xxx.test.ts`. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.typescriptVersion">typescriptVersion</a></code> | <code>string</code> | TypeScript version to use. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackage">cdktfProviderPackage</a></code> | <code>string</code> | Compiled CDKTF provider package name, in NPM style: @scope/library-name. |
-| <code><a href="#skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackageVersion">cdktfProviderPackageVersion</a></code> | <code>string</code> | Matching criteria for NPM package version. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcOptions</code> | Options for .projenrc.json. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.mergify">mergify</a></code> | <code>boolean</code> | Whether mergify should be enabled on this repository or not. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.mergifyOptions">mergifyOptions</a></code> | <code>projen.github.MergifyOptions</code> | Options for mergify. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | Which type of project this is (library/app). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenTokenSecret">projenTokenSecret</a></code> | <code>string</code> | The name of a secret which includes a GitHub Personal Access Token to be used by projen workflows. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmRegistry">npmRegistry</a></code> | <code>string</code> | The host name of the npm registry to publish to. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.scripts">scripts</a></code> | <code>{[ key: string ]: string}</code> | npm scripts to include. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseEveryCommit">releaseEveryCommit</a></code> | <code>boolean</code> | Automatically release new versions every commit to one of branches in `releaseBranches`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseSchedule">releaseSchedule</a></code> | <code>string</code> | CRON schedule to trigger new releases. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. Useful if you are releasing on multiple branches with overlapping version numbers. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with @codeCovTokenSecret. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmignore">npmignore</a></code> | <code>string[]</code> | Additional entries to .npmignore. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflow">releaseWorkflow</a></code> | <code>boolean</code> | DEPRECATED: renamed to `release`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcTs">projenrcTs</a></code> | <code>boolean</code> | Use TypeScript for your projenrc file (`.projenrc.ts`). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.sampleCode">sampleCode</a></code> | <code>boolean</code> | Generate one-time sample in `src/` and `test/` if there are no files there. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. Tests files should be named `xxx.test.ts`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.typescriptVersion">typescriptVersion</a></code> | <code>string</code> | TypeScript version to use. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackage">cdktfProviderPackage</a></code> | <code>string</code> | Compiled CDKTF provider package name, in NPM style: @scope/library-name. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackageVersion">cdktfProviderPackageVersion</a></code> | <code>string</code> | Matching criteria for NPM package version. |
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="skep-plugin-project.SkepPluginProjectOptions.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -167,7 +167,7 @@ This is the name of your project.
 
 ---
 
-##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="skep-plugin-project.SkepPluginProjectOptions.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -180,7 +180,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `logging`<sup>Optional</sup> <a name="logging" id="skep-plugin-project.SkepPluginProjectOptions.property.logging"></a>
+##### `logging`<sup>Optional</sup> <a name="logging" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.logging"></a>
 
 ```typescript
 public readonly logging: LoggerOptions;
@@ -193,7 +193,7 @@ Configure logging options such as verbosity.
 
 ---
 
-##### `outdir`<sup>Optional</sup> <a name="outdir" id="skep-plugin-project.SkepPluginProjectOptions.property.outdir"></a>
+##### `outdir`<sup>Optional</sup> <a name="outdir" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -212,7 +212,7 @@ sub-projects.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="skep-plugin-project.SkepPluginProjectOptions.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -224,7 +224,7 @@ The parent project, if this project is part of a bigger project.
 
 ---
 
-##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="skep-plugin-project.SkepPluginProjectOptions.property.projenCommand"></a>
+##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -239,7 +239,7 @@ Can be used to customize in special environments.
 
 ---
 
-##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="skep-plugin-project.SkepPluginProjectOptions.property.projenrcJson"></a>
+##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJson"></a>
 
 ```typescript
 public readonly projenrcJson: boolean;
@@ -252,7 +252,7 @@ Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .pr
 
 ---
 
-##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsonOptions"></a>
+##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsonOptions"></a>
 
 ```typescript
 public readonly projenrcJsonOptions: ProjenrcOptions;
@@ -265,7 +265,7 @@ Options for .projenrc.json.
 
 ---
 
-##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="skep-plugin-project.SkepPluginProjectOptions.property.renovatebot"></a>
+##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.renovatebot"></a>
 
 ```typescript
 public readonly renovatebot: boolean;
@@ -278,7 +278,7 @@ Use renovatebot to handle dependency upgrades.
 
 ---
 
-##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.renovatebotOptions"></a>
+##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.renovatebotOptions"></a>
 
 ```typescript
 public readonly renovatebotOptions: RenovatebotOptions;
@@ -291,7 +291,7 @@ Options for renovatebot.
 
 ---
 
-##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.autoApproveOptions"></a>
+##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoApproveOptions"></a>
 
 ```typescript
 public readonly autoApproveOptions: AutoApproveOptions;
@@ -304,7 +304,7 @@ Enable and configure the 'auto approve' workflow.
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="skep-plugin-project.SkepPluginProjectOptions.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: boolean;
@@ -320,7 +320,7 @@ is set to false.
 
 ---
 
-##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.autoMergeOptions"></a>
+##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoMergeOptions"></a>
 
 ```typescript
 public readonly autoMergeOptions: AutoMergeOptions;
@@ -336,7 +336,7 @@ Has no effect if
 
 ---
 
-##### `clobber`<sup>Optional</sup> <a name="clobber" id="skep-plugin-project.SkepPluginProjectOptions.property.clobber"></a>
+##### `clobber`<sup>Optional</sup> <a name="clobber" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.clobber"></a>
 
 ```typescript
 public readonly clobber: boolean;
@@ -349,7 +349,7 @@ Add a `clobber` task which resets the repo to origin.
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="skep-plugin-project.SkepPluginProjectOptions.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: boolean;
@@ -362,7 +362,7 @@ Add a VSCode development environment (used for GitHub Codespaces).
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="skep-plugin-project.SkepPluginProjectOptions.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.github"></a>
 
 ```typescript
 public readonly github: boolean;
@@ -377,7 +377,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.githubOptions"></a>
+##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.githubOptions"></a>
 
 ```typescript
 public readonly githubOptions: GitHubOptions;
@@ -390,7 +390,7 @@ Options for GitHub integration.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="skep-plugin-project.SkepPluginProjectOptions.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: boolean;
@@ -403,7 +403,7 @@ Add a Gitpod development environment.
 
 ---
 
-##### ~~`mergify`~~<sup>Optional</sup> <a name="mergify" id="skep-plugin-project.SkepPluginProjectOptions.property.mergify"></a>
+##### ~~`mergify`~~<sup>Optional</sup> <a name="mergify" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.mergify"></a>
 
 - *Deprecated:* use `githubOptions.mergify` instead
 
@@ -418,7 +418,7 @@ Whether mergify should be enabled on this repository or not.
 
 ---
 
-##### ~~`mergifyOptions`~~<sup>Optional</sup> <a name="mergifyOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.mergifyOptions"></a>
+##### ~~`mergifyOptions`~~<sup>Optional</sup> <a name="mergifyOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.mergifyOptions"></a>
 
 - *Deprecated:* use `githubOptions.mergifyOptions` instead
 
@@ -433,7 +433,7 @@ Options for mergify.
 
 ---
 
-##### ~~`projectType`~~<sup>Optional</sup> <a name="projectType" id="skep-plugin-project.SkepPluginProjectOptions.property.projectType"></a>
+##### ~~`projectType`~~<sup>Optional</sup> <a name="projectType" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projectType"></a>
 
 - *Deprecated:* no longer supported at the base project level
 
@@ -448,7 +448,7 @@ Which type of project this is (library/app).
 
 ---
 
-##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="skep-plugin-project.SkepPluginProjectOptions.property.projenCredentials"></a>
+##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenCredentials"></a>
 
 ```typescript
 public readonly projenCredentials: GithubCredentials;
@@ -461,7 +461,7 @@ Choose a method of providing GitHub API access for projen workflows.
 
 ---
 
-##### ~~`projenTokenSecret`~~<sup>Optional</sup> <a name="projenTokenSecret" id="skep-plugin-project.SkepPluginProjectOptions.property.projenTokenSecret"></a>
+##### ~~`projenTokenSecret`~~<sup>Optional</sup> <a name="projenTokenSecret" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenTokenSecret"></a>
 
 - *Deprecated:* use `projenCredentials`
 
@@ -479,7 +479,7 @@ and `packages` scope.
 
 ---
 
-##### `readme`<sup>Optional</sup> <a name="readme" id="skep-plugin-project.SkepPluginProjectOptions.property.readme"></a>
+##### `readme`<sup>Optional</sup> <a name="readme" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.readme"></a>
 
 ```typescript
 public readonly readme: SampleReadmeProps;
@@ -499,7 +499,7 @@ The README setup.
 ```
 
 
-##### `stale`<sup>Optional</sup> <a name="stale" id="skep-plugin-project.SkepPluginProjectOptions.property.stale"></a>
+##### `stale`<sup>Optional</sup> <a name="stale" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.stale"></a>
 
 ```typescript
 public readonly stale: boolean;
@@ -514,7 +514,7 @@ See `staleOptions` for options.
 
 ---
 
-##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.staleOptions"></a>
+##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.staleOptions"></a>
 
 ```typescript
 public readonly staleOptions: StaleOptions;
@@ -529,7 +529,7 @@ To disable set `stale` to `false`.
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="skep-plugin-project.SkepPluginProjectOptions.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.vscode"></a>
 
 ```typescript
 public readonly vscode: boolean;
@@ -544,7 +544,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="skep-plugin-project.SkepPluginProjectOptions.property.allowLibraryDependencies"></a>
+##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.allowLibraryDependencies"></a>
 
 ```typescript
 public readonly allowLibraryDependencies: boolean;
@@ -560,7 +560,7 @@ for specifying these.
 
 ---
 
-##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="skep-plugin-project.SkepPluginProjectOptions.property.authorEmail"></a>
+##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorEmail"></a>
 
 ```typescript
 public readonly authorEmail: string;
@@ -572,7 +572,7 @@ Author's e-mail.
 
 ---
 
-##### `authorName`<sup>Optional</sup> <a name="authorName" id="skep-plugin-project.SkepPluginProjectOptions.property.authorName"></a>
+##### `authorName`<sup>Optional</sup> <a name="authorName" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorName"></a>
 
 ```typescript
 public readonly authorName: string;
@@ -584,7 +584,7 @@ Author's name.
 
 ---
 
-##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="skep-plugin-project.SkepPluginProjectOptions.property.authorOrganization"></a>
+##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorOrganization"></a>
 
 ```typescript
 public readonly authorOrganization: boolean;
@@ -596,7 +596,7 @@ Is the author an organization.
 
 ---
 
-##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="skep-plugin-project.SkepPluginProjectOptions.property.authorUrl"></a>
+##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.authorUrl"></a>
 
 ```typescript
 public readonly authorUrl: string;
@@ -608,7 +608,7 @@ Author's URL / Website.
 
 ---
 
-##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="skep-plugin-project.SkepPluginProjectOptions.property.autoDetectBin"></a>
+##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoDetectBin"></a>
 
 ```typescript
 public readonly autoDetectBin: boolean;
@@ -621,7 +621,7 @@ Automatically add all executables under the `bin` directory to your `package.jso
 
 ---
 
-##### `bin`<sup>Optional</sup> <a name="bin" id="skep-plugin-project.SkepPluginProjectOptions.property.bin"></a>
+##### `bin`<sup>Optional</sup> <a name="bin" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bin"></a>
 
 ```typescript
 public readonly bin: {[ key: string ]: string};
@@ -637,7 +637,7 @@ executable file under `bin` will automatically be added to this section.
 
 ---
 
-##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="skep-plugin-project.SkepPluginProjectOptions.property.bugsEmail"></a>
+##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bugsEmail"></a>
 
 ```typescript
 public readonly bugsEmail: string;
@@ -649,7 +649,7 @@ The email address to which issues should be reported.
 
 ---
 
-##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="skep-plugin-project.SkepPluginProjectOptions.property.bugsUrl"></a>
+##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bugsUrl"></a>
 
 ```typescript
 public readonly bugsUrl: string;
@@ -661,7 +661,7 @@ The url to your project's issue tracker.
 
 ---
 
-##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="skep-plugin-project.SkepPluginProjectOptions.property.bundledDeps"></a>
+##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bundledDeps"></a>
 
 ```typescript
 public readonly bundledDeps: string[];
@@ -684,7 +684,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.codeArtifactOptions"></a>
+##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
 public readonly codeArtifactOptions: CodeArtifactOptions;
@@ -699,7 +699,7 @@ This is required if publishing packages to, or installing scoped packages from A
 
 ---
 
-##### `deps`<sup>Optional</sup> <a name="deps" id="skep-plugin-project.SkepPluginProjectOptions.property.deps"></a>
+##### `deps`<sup>Optional</sup> <a name="deps" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.deps"></a>
 
 ```typescript
 public readonly deps: string[];
@@ -726,7 +726,7 @@ this will be what you `package.json` will eventually include.
 ```
 
 
-##### `description`<sup>Optional</sup> <a name="description" id="skep-plugin-project.SkepPluginProjectOptions.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -741,7 +741,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-description
 
 ---
 
-##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="skep-plugin-project.SkepPluginProjectOptions.property.devDeps"></a>
+##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.devDeps"></a>
 
 ```typescript
 public readonly devDeps: string[];
@@ -772,7 +772,7 @@ this will be what you `package.json` will eventually include.
 ```
 
 
-##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="skep-plugin-project.SkepPluginProjectOptions.property.entrypoint"></a>
+##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.entrypoint"></a>
 
 ```typescript
 public readonly entrypoint: string;
@@ -787,7 +787,7 @@ Set to an empty string to not include `main` in your package.json
 
 ---
 
-##### `homepage`<sup>Optional</sup> <a name="homepage" id="skep-plugin-project.SkepPluginProjectOptions.property.homepage"></a>
+##### `homepage`<sup>Optional</sup> <a name="homepage" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.homepage"></a>
 
 ```typescript
 public readonly homepage: string;
@@ -799,7 +799,7 @@ Package's Homepage / Website.
 
 ---
 
-##### `keywords`<sup>Optional</sup> <a name="keywords" id="skep-plugin-project.SkepPluginProjectOptions.property.keywords"></a>
+##### `keywords`<sup>Optional</sup> <a name="keywords" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.keywords"></a>
 
 ```typescript
 public readonly keywords: string[];
@@ -811,7 +811,7 @@ Keywords to include in `package.json`.
 
 ---
 
-##### `license`<sup>Optional</sup> <a name="license" id="skep-plugin-project.SkepPluginProjectOptions.property.license"></a>
+##### `license`<sup>Optional</sup> <a name="license" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.license"></a>
 
 ```typescript
 public readonly license: string;
@@ -827,7 +827,7 @@ Use the `licensed` option if you want to no license to be specified.
 
 ---
 
-##### `licensed`<sup>Optional</sup> <a name="licensed" id="skep-plugin-project.SkepPluginProjectOptions.property.licensed"></a>
+##### `licensed`<sup>Optional</sup> <a name="licensed" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.licensed"></a>
 
 ```typescript
 public readonly licensed: boolean;
@@ -840,7 +840,7 @@ Indicates if a license should be added.
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -853,7 +853,7 @@ Minimum node.js version to require via `engines` (inclusive).
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -866,7 +866,7 @@ Minimum Node.js version to require via package.json `engines` (inclusive).
 
 ---
 
-##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="skep-plugin-project.SkepPluginProjectOptions.property.npmAccess"></a>
+##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmAccess"></a>
 
 ```typescript
 public readonly npmAccess: NpmAccess;
@@ -879,7 +879,7 @@ Access level of the npm package.
 
 ---
 
-##### ~~`npmRegistry`~~<sup>Optional</sup> <a name="npmRegistry" id="skep-plugin-project.SkepPluginProjectOptions.property.npmRegistry"></a>
+##### ~~`npmRegistry`~~<sup>Optional</sup> <a name="npmRegistry" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmRegistry"></a>
 
 - *Deprecated:* use `npmRegistryUrl` instead
 
@@ -895,7 +895,7 @@ Cannot be set together with `npmRegistryUrl`.
 
 ---
 
-##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="skep-plugin-project.SkepPluginProjectOptions.property.npmRegistryUrl"></a>
+##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmRegistryUrl"></a>
 
 ```typescript
 public readonly npmRegistryUrl: string;
@@ -910,7 +910,7 @@ Must be a URL (e.g. start with "https://" or "http://")
 
 ---
 
-##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="skep-plugin-project.SkepPluginProjectOptions.property.npmTokenSecret"></a>
+##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmTokenSecret"></a>
 
 ```typescript
 public readonly npmTokenSecret: string;
@@ -923,7 +923,7 @@ GitHub secret which contains the NPM token to use when publishing packages.
 
 ---
 
-##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="skep-plugin-project.SkepPluginProjectOptions.property.packageManager"></a>
+##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.packageManager"></a>
 
 ```typescript
 public readonly packageManager: NodePackageManager;
@@ -936,7 +936,7 @@ The Node Package Manager used to execute scripts.
 
 ---
 
-##### `packageName`<sup>Optional</sup> <a name="packageName" id="skep-plugin-project.SkepPluginProjectOptions.property.packageName"></a>
+##### `packageName`<sup>Optional</sup> <a name="packageName" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.packageName"></a>
 
 ```typescript
 public readonly packageName: string;
@@ -949,7 +949,7 @@ The "name" in package.json.
 
 ---
 
-##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.peerDependencyOptions"></a>
+##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.peerDependencyOptions"></a>
 
 ```typescript
 public readonly peerDependencyOptions: PeerDependencyOptions;
@@ -961,7 +961,7 @@ Options for `peerDeps`.
 
 ---
 
-##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="skep-plugin-project.SkepPluginProjectOptions.property.peerDeps"></a>
+##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.peerDeps"></a>
 
 ```typescript
 public readonly peerDeps: string[];
@@ -988,7 +988,7 @@ test your module against the lowest peer version required.
 
 ---
 
-##### `repository`<sup>Optional</sup> <a name="repository" id="skep-plugin-project.SkepPluginProjectOptions.property.repository"></a>
+##### `repository`<sup>Optional</sup> <a name="repository" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.repository"></a>
 
 ```typescript
 public readonly repository: string;
@@ -1002,7 +1002,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-repository
 
 ---
 
-##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="skep-plugin-project.SkepPluginProjectOptions.property.repositoryDirectory"></a>
+##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.repositoryDirectory"></a>
 
 ```typescript
 public readonly repositoryDirectory: string;
@@ -1014,7 +1014,7 @@ If the package.json for your package is not in the root directory (for example i
 
 ---
 
-##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.scopedPackagesOptions"></a>
+##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.scopedPackagesOptions"></a>
 
 ```typescript
 public readonly scopedPackagesOptions: ScopedPackagesOptions[];
@@ -1027,7 +1027,7 @@ Options for privately hosted scoped packages.
 
 ---
 
-##### `scripts`<sup>Optional</sup> <a name="scripts" id="skep-plugin-project.SkepPluginProjectOptions.property.scripts"></a>
+##### `scripts`<sup>Optional</sup> <a name="scripts" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.scripts"></a>
 
 ```typescript
 public readonly scripts: {[ key: string ]: string};
@@ -1043,7 +1043,7 @@ the standard script will be overwritten.
 
 ---
 
-##### `stability`<sup>Optional</sup> <a name="stability" id="skep-plugin-project.SkepPluginProjectOptions.property.stability"></a>
+##### `stability`<sup>Optional</sup> <a name="stability" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.stability"></a>
 
 ```typescript
 public readonly stability: string;
@@ -1055,7 +1055,7 @@ Package's Stability.
 
 ---
 
-##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.jsiiReleaseVersion"></a>
+##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.jsiiReleaseVersion"></a>
 
 ```typescript
 public readonly jsiiReleaseVersion: string;
@@ -1068,7 +1068,7 @@ Version requirement of `publib` which is used to publish modules to npm.
 
 ---
 
-##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.majorVersion"></a>
+##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.majorVersion"></a>
 
 ```typescript
 public readonly majorVersion: number;
@@ -1084,7 +1084,7 @@ If not specified, we bump the global latest version.
 
 ---
 
-##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.minMajorVersion"></a>
+##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.minMajorVersion"></a>
 
 ```typescript
 public readonly minMajorVersion: number;
@@ -1102,7 +1102,7 @@ Can not be set together with `majorVersion`.
 
 ---
 
-##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="skep-plugin-project.SkepPluginProjectOptions.property.npmDistTag"></a>
+##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmDistTag"></a>
 
 ```typescript
 public readonly npmDistTag: string;
@@ -1118,7 +1118,7 @@ for each branch.
 
 ---
 
-##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="skep-plugin-project.SkepPluginProjectOptions.property.postBuildSteps"></a>
+##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.postBuildSteps"></a>
 
 ```typescript
 public readonly postBuildSteps: JobStep[];
@@ -1131,7 +1131,7 @@ Steps to execute after build as part of the release workflow.
 
 ---
 
-##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="skep-plugin-project.SkepPluginProjectOptions.property.prerelease"></a>
+##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.prerelease"></a>
 
 ```typescript
 public readonly prerelease: string;
@@ -1144,7 +1144,7 @@ Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pr
 
 ---
 
-##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="skep-plugin-project.SkepPluginProjectOptions.property.publishDryRun"></a>
+##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.publishDryRun"></a>
 
 ```typescript
 public readonly publishDryRun: boolean;
@@ -1157,7 +1157,7 @@ Instead of actually publishing to package managers, just print the publishing co
 
 ---
 
-##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="skep-plugin-project.SkepPluginProjectOptions.property.publishTasks"></a>
+##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.publishTasks"></a>
 
 ```typescript
 public readonly publishTasks: boolean;
@@ -1173,7 +1173,7 @@ in order to create a publishing task for each publishing activity.
 
 ---
 
-##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseBranches"></a>
+##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseBranches"></a>
 
 ```typescript
 public readonly releaseBranches: {[ key: string ]: BranchOptions};
@@ -1193,7 +1193,7 @@ be provided for the default branch.
 
 ---
 
-##### ~~`releaseEveryCommit`~~<sup>Optional</sup> <a name="releaseEveryCommit" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseEveryCommit"></a>
+##### ~~`releaseEveryCommit`~~<sup>Optional</sup> <a name="releaseEveryCommit" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseEveryCommit"></a>
 
 - *Deprecated:* Use `releaseTrigger: ReleaseTrigger.continuous()` instead
 
@@ -1208,7 +1208,7 @@ Automatically release new versions every commit to one of branches in `releaseBr
 
 ---
 
-##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssue"></a>
+##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssue"></a>
 
 ```typescript
 public readonly releaseFailureIssue: boolean;
@@ -1221,7 +1221,7 @@ Create a github issue on every failed publishing task.
 
 ---
 
-##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssueLabel"></a>
+##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseFailureIssueLabel"></a>
 
 ```typescript
 public readonly releaseFailureIssueLabel: string;
@@ -1236,7 +1236,7 @@ Only applies if `releaseFailureIssue` is true.
 
 ---
 
-##### ~~`releaseSchedule`~~<sup>Optional</sup> <a name="releaseSchedule" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseSchedule"></a>
+##### ~~`releaseSchedule`~~<sup>Optional</sup> <a name="releaseSchedule" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseSchedule"></a>
 
 - *Deprecated:* Use `releaseTrigger: ReleaseTrigger.scheduled()` instead
 
@@ -1251,7 +1251,7 @@ CRON schedule to trigger new releases.
 
 ---
 
-##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseTagPrefix"></a>
+##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseTagPrefix"></a>
 
 ```typescript
 public readonly releaseTagPrefix: string;
@@ -1269,7 +1269,7 @@ with the new prefix.
 
 ---
 
-##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseTrigger"></a>
+##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseTrigger"></a>
 
 ```typescript
 public readonly releaseTrigger: ReleaseTrigger;
@@ -1282,7 +1282,7 @@ The release trigger to use.
 
 ---
 
-##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowName"></a>
+##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowName"></a>
 
 ```typescript
 public readonly releaseWorkflowName: string;
@@ -1295,7 +1295,7 @@ The name of the default release workflow.
 
 ---
 
-##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowSetupSteps"></a>
+##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflowSetupSteps"></a>
 
 ```typescript
 public readonly releaseWorkflowSetupSteps: JobStep[];
@@ -1307,7 +1307,7 @@ A set of workflow steps to execute in order to setup the workflow container.
 
 ---
 
-##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.versionrcOptions"></a>
+##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.versionrcOptions"></a>
 
 ```typescript
 public readonly versionrcOptions: {[ key: string ]: any};
@@ -1322,7 +1322,7 @@ Given values either append to default configuration or overwrite values in it.
 
 ---
 
-##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="skep-plugin-project.SkepPluginProjectOptions.property.workflowContainerImage"></a>
+##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowContainerImage"></a>
 
 ```typescript
 public readonly workflowContainerImage: string;
@@ -1335,7 +1335,7 @@ Container image to use for GitHub workflows.
 
 ---
 
-##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="skep-plugin-project.SkepPluginProjectOptions.property.workflowRunsOn"></a>
+##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowRunsOn"></a>
 
 ```typescript
 public readonly workflowRunsOn: string[];
@@ -1348,7 +1348,7 @@ Github Runner selection labels.
 
 ---
 
-##### `defaultReleaseBranch`<sup>Required</sup> <a name="defaultReleaseBranch" id="skep-plugin-project.SkepPluginProjectOptions.property.defaultReleaseBranch"></a>
+##### `defaultReleaseBranch`<sup>Required</sup> <a name="defaultReleaseBranch" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.defaultReleaseBranch"></a>
 
 ```typescript
 public readonly defaultReleaseBranch: string;
@@ -1361,7 +1361,7 @@ The name of the main release branch.
 
 ---
 
-##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="skep-plugin-project.SkepPluginProjectOptions.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -1374,7 +1374,7 @@ A directory which will contain build artifacts.
 
 ---
 
-##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="skep-plugin-project.SkepPluginProjectOptions.property.autoApproveUpgrades"></a>
+##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.autoApproveUpgrades"></a>
 
 ```typescript
 public readonly autoApproveUpgrades: boolean;
@@ -1389,7 +1389,7 @@ Throw if set to true but `autoApproveOptions` are not defined.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: boolean;
@@ -1402,7 +1402,7 @@ Define a GitHub workflow for building PRs.
 
 ---
 
-##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflowTriggers"></a>
+##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.buildWorkflowTriggers"></a>
 
 ```typescript
 public readonly buildWorkflowTriggers: Triggers;
@@ -1415,7 +1415,7 @@ Build workflow triggers.
 
 ---
 
-##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.bundlerOptions"></a>
+##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.bundlerOptions"></a>
 
 ```typescript
 public readonly bundlerOptions: BundlerOptions;
@@ -1427,7 +1427,7 @@ Options for `Bundler`.
 
 ---
 
-##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="skep-plugin-project.SkepPluginProjectOptions.property.codeCov"></a>
+##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.codeCov"></a>
 
 ```typescript
 public readonly codeCov: boolean;
@@ -1440,7 +1440,7 @@ Define a GitHub workflow step for sending code coverage metrics to https://codec
 
 ---
 
-##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="skep-plugin-project.SkepPluginProjectOptions.property.codeCovTokenSecret"></a>
+##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.codeCovTokenSecret"></a>
 
 ```typescript
 public readonly codeCovTokenSecret: string;
@@ -1453,7 +1453,7 @@ Define the secret name for a specified https://codecov.io/ token A secret is req
 
 ---
 
-##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="skep-plugin-project.SkepPluginProjectOptions.property.copyrightOwner"></a>
+##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.copyrightOwner"></a>
 
 ```typescript
 public readonly copyrightOwner: string;
@@ -1466,7 +1466,7 @@ License copyright owner.
 
 ---
 
-##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="skep-plugin-project.SkepPluginProjectOptions.property.copyrightPeriod"></a>
+##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.copyrightPeriod"></a>
 
 ```typescript
 public readonly copyrightPeriod: string;
@@ -1479,7 +1479,7 @@ The copyright years to put in the LICENSE file.
 
 ---
 
-##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="skep-plugin-project.SkepPluginProjectOptions.property.dependabot"></a>
+##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.dependabot"></a>
 
 ```typescript
 public readonly dependabot: boolean;
@@ -1494,7 +1494,7 @@ Cannot be used in conjunction with `depsUpgrade`.
 
 ---
 
-##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.dependabotOptions"></a>
+##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.dependabotOptions"></a>
 
 ```typescript
 public readonly dependabotOptions: DependabotOptions;
@@ -1507,7 +1507,7 @@ Options for dependabot.
 
 ---
 
-##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="skep-plugin-project.SkepPluginProjectOptions.property.depsUpgrade"></a>
+##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.depsUpgrade"></a>
 
 ```typescript
 public readonly depsUpgrade: boolean;
@@ -1522,7 +1522,7 @@ Cannot be used in conjunction with `dependabot`.
 
 ---
 
-##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.depsUpgradeOptions"></a>
+##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.depsUpgradeOptions"></a>
 
 ```typescript
 public readonly depsUpgradeOptions: UpgradeDependenciesOptions;
@@ -1535,7 +1535,7 @@ Options for `UpgradeDependencies`.
 
 ---
 
-##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="skep-plugin-project.SkepPluginProjectOptions.property.gitignore"></a>
+##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: string[];
@@ -1547,7 +1547,7 @@ Additional entries to .gitignore.
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="skep-plugin-project.SkepPluginProjectOptions.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.jest"></a>
 
 ```typescript
 public readonly jest: boolean;
@@ -1560,7 +1560,7 @@ Setup jest unit tests.
 
 ---
 
-##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.jestOptions"></a>
+##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.jestOptions"></a>
 
 ```typescript
 public readonly jestOptions: JestOptions;
@@ -1573,7 +1573,7 @@ Jest options.
 
 ---
 
-##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="skep-plugin-project.SkepPluginProjectOptions.property.mutableBuild"></a>
+##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.mutableBuild"></a>
 
 ```typescript
 public readonly mutableBuild: boolean;
@@ -1592,7 +1592,7 @@ Implies that PR builds do not have anti-tamper checks.
 
 ---
 
-##### ~~`npmignore`~~<sup>Optional</sup> <a name="npmignore" id="skep-plugin-project.SkepPluginProjectOptions.property.npmignore"></a>
+##### ~~`npmignore`~~<sup>Optional</sup> <a name="npmignore" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmignore"></a>
 
 - *Deprecated:* - use `project.addPackageIgnore`
 
@@ -1606,7 +1606,7 @@ Additional entries to .npmignore.
 
 ---
 
-##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="skep-plugin-project.SkepPluginProjectOptions.property.npmignoreEnabled"></a>
+##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.npmignoreEnabled"></a>
 
 ```typescript
 public readonly npmignoreEnabled: boolean;
@@ -1619,7 +1619,7 @@ Defines an .npmignore file. Normally this is only needed for libraries that are 
 
 ---
 
-##### `package`<sup>Optional</sup> <a name="package" id="skep-plugin-project.SkepPluginProjectOptions.property.package"></a>
+##### `package`<sup>Optional</sup> <a name="package" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.package"></a>
 
 ```typescript
 public readonly package: boolean;
@@ -1632,7 +1632,7 @@ Defines a `package` task that will produce an npm tarball under the artifacts di
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="skep-plugin-project.SkepPluginProjectOptions.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.prettier"></a>
 
 ```typescript
 public readonly prettier: boolean;
@@ -1645,7 +1645,7 @@ Setup prettier.
 
 ---
 
-##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.prettierOptions"></a>
+##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.prettierOptions"></a>
 
 ```typescript
 public readonly prettierOptions: PrettierOptions;
@@ -1658,7 +1658,7 @@ Prettier options.
 
 ---
 
-##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="skep-plugin-project.SkepPluginProjectOptions.property.projenDevDependency"></a>
+##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenDevDependency"></a>
 
 ```typescript
 public readonly projenDevDependency: boolean;
@@ -1671,7 +1671,7 @@ Indicates of "projen" should be installed as a devDependency.
 
 ---
 
-##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="skep-plugin-project.SkepPluginProjectOptions.property.projenrcJs"></a>
+##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJs"></a>
 
 ```typescript
 public readonly projenrcJs: boolean;
@@ -1684,7 +1684,7 @@ Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable
 
 ---
 
-##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsOptions"></a>
+##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcJsOptions"></a>
 
 ```typescript
 public readonly projenrcJsOptions: ProjenrcOptions;
@@ -1697,7 +1697,7 @@ Options for .projenrc.js.
 
 ---
 
-##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.projenVersion"></a>
+##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenVersion"></a>
 
 ```typescript
 public readonly projenVersion: string;
@@ -1710,7 +1710,7 @@ Version of projen to install.
 
 ---
 
-##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplate"></a>
+##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplate"></a>
 
 ```typescript
 public readonly pullRequestTemplate: boolean;
@@ -1723,7 +1723,7 @@ Include a GitHub pull request template.
 
 ---
 
-##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplateContents"></a>
+##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.pullRequestTemplateContents"></a>
 
 ```typescript
 public readonly pullRequestTemplateContents: string[];
@@ -1736,7 +1736,7 @@ The contents of the pull request template.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="skep-plugin-project.SkepPluginProjectOptions.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.release"></a>
 
 ```typescript
 public readonly release: boolean;
@@ -1749,7 +1749,7 @@ Add release management to this project.
 
 ---
 
-##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseToNpm"></a>
+##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseToNpm"></a>
 
 ```typescript
 public readonly releaseToNpm: boolean;
@@ -1762,7 +1762,7 @@ Automatically release to npm when new versions are introduced.
 
 ---
 
-##### ~~`releaseWorkflow`~~<sup>Optional</sup> <a name="releaseWorkflow" id="skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflow"></a>
+##### ~~`releaseWorkflow`~~<sup>Optional</sup> <a name="releaseWorkflow" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.releaseWorkflow"></a>
 
 - *Deprecated:* see `release`.
 
@@ -1777,7 +1777,7 @@ DEPRECATED: renamed to `release`.
 
 ---
 
-##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="skep-plugin-project.SkepPluginProjectOptions.property.workflowBootstrapSteps"></a>
+##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowBootstrapSteps"></a>
 
 ```typescript
 public readonly workflowBootstrapSteps: JobStep[];
@@ -1790,7 +1790,7 @@ Workflow steps to use in order to bootstrap this repo.
 
 ---
 
-##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="skep-plugin-project.SkepPluginProjectOptions.property.workflowGitIdentity"></a>
+##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowGitIdentity"></a>
 
 ```typescript
 public readonly workflowGitIdentity: GitIdentity;
@@ -1803,7 +1803,7 @@ The git identity to use in workflows.
 
 ---
 
-##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.workflowNodeVersion"></a>
+##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.workflowNodeVersion"></a>
 
 ```typescript
 public readonly workflowNodeVersion: string;
@@ -1816,7 +1816,7 @@ The node version to use in GitHub workflows.
 
 ---
 
-##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="skep-plugin-project.SkepPluginProjectOptions.property.disableTsconfig"></a>
+##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.disableTsconfig"></a>
 
 ```typescript
 public readonly disableTsconfig: boolean;
@@ -1829,7 +1829,7 @@ Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.jso
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="skep-plugin-project.SkepPluginProjectOptions.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -1842,7 +1842,7 @@ Docgen by Typedoc.
 
 ---
 
-##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="skep-plugin-project.SkepPluginProjectOptions.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -1855,7 +1855,7 @@ Docs directory.
 
 ---
 
-##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="skep-plugin-project.SkepPluginProjectOptions.property.entrypointTypes"></a>
+##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.entrypointTypes"></a>
 
 ```typescript
 public readonly entrypointTypes: string;
@@ -1868,7 +1868,7 @@ The .d.ts file that includes the type declarations for this module.
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="skep-plugin-project.SkepPluginProjectOptions.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.eslint"></a>
 
 ```typescript
 public readonly eslint: boolean;
@@ -1881,7 +1881,7 @@ Setup eslint.
 
 ---
 
-##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.eslintOptions"></a>
+##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.eslintOptions"></a>
 
 ```typescript
 public readonly eslintOptions: EslintOptions;
@@ -1894,7 +1894,7 @@ Eslint options.
 
 ---
 
-##### `libdir`<sup>Optional</sup> <a name="libdir" id="skep-plugin-project.SkepPluginProjectOptions.property.libdir"></a>
+##### `libdir`<sup>Optional</sup> <a name="libdir" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -1907,7 +1907,7 @@ Typescript  artifacts output directory.
 
 ---
 
-##### `projenrcTs`<sup>Optional</sup> <a name="projenrcTs" id="skep-plugin-project.SkepPluginProjectOptions.property.projenrcTs"></a>
+##### `projenrcTs`<sup>Optional</sup> <a name="projenrcTs" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcTs"></a>
 
 ```typescript
 public readonly projenrcTs: boolean;
@@ -1920,7 +1920,7 @@ Use TypeScript for your projenrc file (`.projenrc.ts`).
 
 ---
 
-##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="skep-plugin-project.SkepPluginProjectOptions.property.projenrcTsOptions"></a>
+##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.projenrcTsOptions"></a>
 
 ```typescript
 public readonly projenrcTsOptions: ProjenrcOptions;
@@ -1932,7 +1932,7 @@ Options for .projenrc.ts.
 
 ---
 
-##### `sampleCode`<sup>Optional</sup> <a name="sampleCode" id="skep-plugin-project.SkepPluginProjectOptions.property.sampleCode"></a>
+##### `sampleCode`<sup>Optional</sup> <a name="sampleCode" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.sampleCode"></a>
 
 ```typescript
 public readonly sampleCode: boolean;
@@ -1945,7 +1945,7 @@ Generate one-time sample in `src/` and `test/` if there are no files there.
 
 ---
 
-##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="skep-plugin-project.SkepPluginProjectOptions.property.srcdir"></a>
+##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -1958,7 +1958,7 @@ Typescript sources directory.
 
 ---
 
-##### `testdir`<sup>Optional</sup> <a name="testdir" id="skep-plugin-project.SkepPluginProjectOptions.property.testdir"></a>
+##### `testdir`<sup>Optional</sup> <a name="testdir" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -1976,7 +1976,7 @@ compile the code in-memory.
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="skep-plugin-project.SkepPluginProjectOptions.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfigOptions;
@@ -1989,7 +1989,7 @@ Custom TSConfig.
 
 ---
 
-##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfigOptions;
@@ -2002,7 +2002,7 @@ Custom tsconfig options for the development tsconfig.json file (used for testing
 
 ---
 
-##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDevFile"></a>
+##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.tsconfigDevFile"></a>
 
 ```typescript
 public readonly tsconfigDevFile: string;
@@ -2015,7 +2015,7 @@ The name of the development tsconfig.json file.
 
 ---
 
-##### `typescriptVersion`<sup>Optional</sup> <a name="typescriptVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.typescriptVersion"></a>
+##### `typescriptVersion`<sup>Optional</sup> <a name="typescriptVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.typescriptVersion"></a>
 
 ```typescript
 public readonly typescriptVersion: string;
@@ -2031,7 +2031,7 @@ same minor, so we recommend using a `~` dependency (e.g. `~1.2.3`).
 
 ---
 
-##### `cdktfProviderPackage`<sup>Required</sup> <a name="cdktfProviderPackage" id="skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackage"></a>
+##### `cdktfProviderPackage`<sup>Required</sup> <a name="cdktfProviderPackage" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackage"></a>
 
 ```typescript
 public readonly cdktfProviderPackage: string;
@@ -2045,7 +2045,7 @@ Example: @cdktf/provider-github
 
 ---
 
-##### `cdktfProviderPackageVersion`<sup>Optional</sup> <a name="cdktfProviderPackageVersion" id="skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackageVersion"></a>
+##### `cdktfProviderPackageVersion`<sup>Optional</sup> <a name="cdktfProviderPackageVersion" id="@skeptools/skep-plugin-project.SkepPluginProjectOptions.property.cdktfProviderPackageVersion"></a>
 
 ```typescript
 public readonly cdktfProviderPackageVersion: string;
@@ -2062,25 +2062,25 @@ Example: ~3.0
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SkepPluginProject <a name="SkepPluginProject" id="skep-plugin-project.SkepPluginProject"></a>
+### SkepPluginProject <a name="SkepPluginProject" id="@skeptools/skep-plugin-project.SkepPluginProject"></a>
 
-#### Initializers <a name="Initializers" id="skep-plugin-project.SkepPluginProject.Initializer"></a>
+#### Initializers <a name="Initializers" id="@skeptools/skep-plugin-project.SkepPluginProject.Initializer"></a>
 
 ```typescript
-import { SkepPluginProject } from 'skep-plugin-project'
+import { SkepPluginProject } from '@skeptools/skep-plugin-project'
 
 new SkepPluginProject(options: SkepPluginProjectOptions)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#skep-plugin-project.SkepPluginProject.Initializer.parameter.options">options</a></code> | <code><a href="#skep-plugin-project.SkepPluginProjectOptions">SkepPluginProjectOptions</a></code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.Initializer.parameter.options">options</a></code> | <code><a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions">SkepPluginProjectOptions</a></code> | *No description.* |
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="skep-plugin-project.SkepPluginProject.Initializer.parameter.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="@skeptools/skep-plugin-project.SkepPluginProject.Initializer.parameter.options"></a>
 
-- *Type:* <a href="#skep-plugin-project.SkepPluginProjectOptions">SkepPluginProjectOptions</a>
+- *Type:* <a href="#@skeptools/skep-plugin-project.SkepPluginProjectOptions">SkepPluginProjectOptions</a>
 
 ---
 
@@ -2088,38 +2088,38 @@ new SkepPluginProject(options: SkepPluginProjectOptions)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addTask">addTask</a></code> | Adds a new task to this project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.removeTask">removeTask</a></code> | Removes a task from a project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addBins">addBins</a></code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
-| <code><a href="#skep-plugin-project.SkepPluginProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addTask">addTask</a></code> | Adds a new task to this project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.removeTask">removeTask</a></code> | Removes a task from a project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addBins">addBins</a></code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
 
 ---
 
-##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="skep-plugin-project.SkepPluginProject.addExcludeFromCleanup"></a>
+##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="@skeptools/skep-plugin-project.SkepPluginProject.addExcludeFromCleanup"></a>
 
 ```typescript
 public addExcludeFromCleanup(globs: string): void
@@ -2130,7 +2130,7 @@ Exclude the matching files from pre-synth cleanup.
 Can be used when, for example, some
 source files include the projen marker and we don't want them to be erased during synth.
 
-###### `globs`<sup>Required</sup> <a name="globs" id="skep-plugin-project.SkepPluginProject.addExcludeFromCleanup.parameter.globs"></a>
+###### `globs`<sup>Required</sup> <a name="globs" id="@skeptools/skep-plugin-project.SkepPluginProject.addExcludeFromCleanup.parameter.globs"></a>
 
 - *Type:* string
 
@@ -2138,7 +2138,7 @@ The glob patterns to match.
 
 ---
 
-##### `addGitIgnore` <a name="addGitIgnore" id="skep-plugin-project.SkepPluginProject.addGitIgnore"></a>
+##### `addGitIgnore` <a name="addGitIgnore" id="@skeptools/skep-plugin-project.SkepPluginProject.addGitIgnore"></a>
 
 ```typescript
 public addGitIgnore(pattern: string): void
@@ -2146,7 +2146,7 @@ public addGitIgnore(pattern: string): void
 
 Adds a .gitignore pattern.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="skep-plugin-project.SkepPluginProject.addGitIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="@skeptools/skep-plugin-project.SkepPluginProject.addGitIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
@@ -2154,7 +2154,7 @@ The glob pattern to ignore.
 
 ---
 
-##### `addPackageIgnore` <a name="addPackageIgnore" id="skep-plugin-project.SkepPluginProject.addPackageIgnore"></a>
+##### `addPackageIgnore` <a name="addPackageIgnore" id="@skeptools/skep-plugin-project.SkepPluginProject.addPackageIgnore"></a>
 
 ```typescript
 public addPackageIgnore(pattern: string): void
@@ -2165,13 +2165,13 @@ Exclude these files from the bundled package.
 Implemented by project types based on the
 packaging mechanism. For example, `NodeProject` delegates this to `.npmignore`.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="skep-plugin-project.SkepPluginProject.addPackageIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="@skeptools/skep-plugin-project.SkepPluginProject.addPackageIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
 ---
 
-##### `addTask` <a name="addTask" id="skep-plugin-project.SkepPluginProject.addTask"></a>
+##### `addTask` <a name="addTask" id="@skeptools/skep-plugin-project.SkepPluginProject.addTask"></a>
 
 ```typescript
 public addTask(name: string, props?: TaskOptions): Task
@@ -2182,7 +2182,7 @@ Adds a new task to this project.
 This will fail if the project already has
 a task with this name.
 
-###### `name`<sup>Required</sup> <a name="name" id="skep-plugin-project.SkepPluginProject.addTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="@skeptools/skep-plugin-project.SkepPluginProject.addTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -2190,7 +2190,7 @@ The task name to add.
 
 ---
 
-###### `props`<sup>Optional</sup> <a name="props" id="skep-plugin-project.SkepPluginProject.addTask.parameter.props"></a>
+###### `props`<sup>Optional</sup> <a name="props" id="@skeptools/skep-plugin-project.SkepPluginProject.addTask.parameter.props"></a>
 
 - *Type:* projen.TaskOptions
 
@@ -2198,7 +2198,7 @@ Task properties.
 
 ---
 
-##### ~~`addTip`~~ <a name="addTip" id="skep-plugin-project.SkepPluginProject.addTip"></a>
+##### ~~`addTip`~~ <a name="addTip" id="@skeptools/skep-plugin-project.SkepPluginProject.addTip"></a>
 
 ```typescript
 public addTip(message: string): void
@@ -2206,7 +2206,7 @@ public addTip(message: string): void
 
 Prints a "tip" message during synthesis.
 
-###### `message`<sup>Required</sup> <a name="message" id="skep-plugin-project.SkepPluginProject.addTip.parameter.message"></a>
+###### `message`<sup>Required</sup> <a name="message" id="@skeptools/skep-plugin-project.SkepPluginProject.addTip.parameter.message"></a>
 
 - *Type:* string
 
@@ -2214,7 +2214,7 @@ The message.
 
 ---
 
-##### `annotateGenerated` <a name="annotateGenerated" id="skep-plugin-project.SkepPluginProject.annotateGenerated"></a>
+##### `annotateGenerated` <a name="annotateGenerated" id="@skeptools/skep-plugin-project.SkepPluginProject.annotateGenerated"></a>
 
 ```typescript
 public annotateGenerated(glob: string): void
@@ -2228,7 +2228,7 @@ repository statistics and language breakdown.
 
 > [https://github.com/github/linguist/blob/master/docs/overrides.md](https://github.com/github/linguist/blob/master/docs/overrides.md)
 
-###### `glob`<sup>Required</sup> <a name="glob" id="skep-plugin-project.SkepPluginProject.annotateGenerated.parameter.glob"></a>
+###### `glob`<sup>Required</sup> <a name="glob" id="@skeptools/skep-plugin-project.SkepPluginProject.annotateGenerated.parameter.glob"></a>
 
 - *Type:* string
 
@@ -2236,7 +2236,7 @@ the glob pattern to match (could be a file path).
 
 ---
 
-##### `postSynthesize` <a name="postSynthesize" id="skep-plugin-project.SkepPluginProject.postSynthesize"></a>
+##### `postSynthesize` <a name="postSynthesize" id="@skeptools/skep-plugin-project.SkepPluginProject.postSynthesize"></a>
 
 ```typescript
 public postSynthesize(): void
@@ -2246,7 +2246,7 @@ Called after all components are synthesized.
 
 Order is *not* guaranteed.
 
-##### `preSynthesize` <a name="preSynthesize" id="skep-plugin-project.SkepPluginProject.preSynthesize"></a>
+##### `preSynthesize` <a name="preSynthesize" id="@skeptools/skep-plugin-project.SkepPluginProject.preSynthesize"></a>
 
 ```typescript
 public preSynthesize(): void
@@ -2254,7 +2254,7 @@ public preSynthesize(): void
 
 Called before all components are synthesized.
 
-##### `removeTask` <a name="removeTask" id="skep-plugin-project.SkepPluginProject.removeTask"></a>
+##### `removeTask` <a name="removeTask" id="@skeptools/skep-plugin-project.SkepPluginProject.removeTask"></a>
 
 ```typescript
 public removeTask(name: string): Task
@@ -2262,7 +2262,7 @@ public removeTask(name: string): Task
 
 Removes a task from a project.
 
-###### `name`<sup>Required</sup> <a name="name" id="skep-plugin-project.SkepPluginProject.removeTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="@skeptools/skep-plugin-project.SkepPluginProject.removeTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -2270,7 +2270,7 @@ The name of the task to remove.
 
 ---
 
-##### `runTaskCommand` <a name="runTaskCommand" id="skep-plugin-project.SkepPluginProject.runTaskCommand"></a>
+##### `runTaskCommand` <a name="runTaskCommand" id="@skeptools/skep-plugin-project.SkepPluginProject.runTaskCommand"></a>
 
 ```typescript
 public runTaskCommand(task: Task): string
@@ -2281,7 +2281,7 @@ Returns the shell command to execute in order to run a task.
 This will
 typically be `npx projen TASK`.
 
-###### `task`<sup>Required</sup> <a name="task" id="skep-plugin-project.SkepPluginProject.runTaskCommand.parameter.task"></a>
+###### `task`<sup>Required</sup> <a name="task" id="@skeptools/skep-plugin-project.SkepPluginProject.runTaskCommand.parameter.task"></a>
 
 - *Type:* projen.Task
 
@@ -2289,7 +2289,7 @@ The task for which the command is required.
 
 ---
 
-##### `synth` <a name="synth" id="skep-plugin-project.SkepPluginProject.synth"></a>
+##### `synth` <a name="synth" id="@skeptools/skep-plugin-project.SkepPluginProject.synth"></a>
 
 ```typescript
 public synth(): void
@@ -2304,7 +2304,7 @@ Synthesize all project files into `outdir`.
 5. Call "postSynthesize()" for all components of this project
 6. Call "this.postSynthesize()"
 
-##### `tryFindFile` <a name="tryFindFile" id="skep-plugin-project.SkepPluginProject.tryFindFile"></a>
+##### `tryFindFile` <a name="tryFindFile" id="@skeptools/skep-plugin-project.SkepPluginProject.tryFindFile"></a>
 
 ```typescript
 public tryFindFile(filePath: string): FileBase
@@ -2312,7 +2312,7 @@ public tryFindFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and all its subprojects.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="skep-plugin-project.SkepPluginProject.tryFindFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="@skeptools/skep-plugin-project.SkepPluginProject.tryFindFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -2323,7 +2323,7 @@ from the root of _this_ project.
 
 ---
 
-##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="skep-plugin-project.SkepPluginProject.tryFindJsonFile"></a>
+##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="@skeptools/skep-plugin-project.SkepPluginProject.tryFindJsonFile"></a>
 
 ```typescript
 public tryFindJsonFile(filePath: string): JsonFile
@@ -2331,7 +2331,7 @@ public tryFindJsonFile(filePath: string): JsonFile
 
 Finds a json file by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="skep-plugin-project.SkepPluginProject.tryFindJsonFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="@skeptools/skep-plugin-project.SkepPluginProject.tryFindJsonFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -2339,7 +2339,7 @@ The file path.
 
 ---
 
-##### `tryFindObjectFile` <a name="tryFindObjectFile" id="skep-plugin-project.SkepPluginProject.tryFindObjectFile"></a>
+##### `tryFindObjectFile` <a name="tryFindObjectFile" id="@skeptools/skep-plugin-project.SkepPluginProject.tryFindObjectFile"></a>
 
 ```typescript
 public tryFindObjectFile(filePath: string): ObjectFile
@@ -2347,7 +2347,7 @@ public tryFindObjectFile(filePath: string): ObjectFile
 
 Finds an object file (like JsonFile, YamlFile, etc.) by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="skep-plugin-project.SkepPluginProject.tryFindObjectFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="@skeptools/skep-plugin-project.SkepPluginProject.tryFindObjectFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -2355,7 +2355,7 @@ The file path.
 
 ---
 
-##### `tryRemoveFile` <a name="tryRemoveFile" id="skep-plugin-project.SkepPluginProject.tryRemoveFile"></a>
+##### `tryRemoveFile` <a name="tryRemoveFile" id="@skeptools/skep-plugin-project.SkepPluginProject.tryRemoveFile"></a>
 
 ```typescript
 public tryRemoveFile(filePath: string): FileBase
@@ -2363,7 +2363,7 @@ public tryRemoveFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and removes it.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="skep-plugin-project.SkepPluginProject.tryRemoveFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="@skeptools/skep-plugin-project.SkepPluginProject.tryRemoveFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -2374,19 +2374,19 @@ resolved from the root of _this_ project.
 
 ---
 
-##### `addBins` <a name="addBins" id="skep-plugin-project.SkepPluginProject.addBins"></a>
+##### `addBins` <a name="addBins" id="@skeptools/skep-plugin-project.SkepPluginProject.addBins"></a>
 
 ```typescript
 public addBins(bins: {[ key: string ]: string}): void
 ```
 
-###### `bins`<sup>Required</sup> <a name="bins" id="skep-plugin-project.SkepPluginProject.addBins.parameter.bins"></a>
+###### `bins`<sup>Required</sup> <a name="bins" id="@skeptools/skep-plugin-project.SkepPluginProject.addBins.parameter.bins"></a>
 
 - *Type:* {[ key: string ]: string}
 
 ---
 
-##### `addBundledDeps` <a name="addBundledDeps" id="skep-plugin-project.SkepPluginProject.addBundledDeps"></a>
+##### `addBundledDeps` <a name="addBundledDeps" id="@skeptools/skep-plugin-project.SkepPluginProject.addBundledDeps"></a>
 
 ```typescript
 public addBundledDeps(deps: string): void
@@ -2397,7 +2397,7 @@ Defines bundled dependencies.
 Bundled dependencies will be added as normal dependencies as well as to the
 `bundledDependencies` section of your `package.json`.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="skep-plugin-project.SkepPluginProject.addBundledDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="@skeptools/skep-plugin-project.SkepPluginProject.addBundledDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -2411,7 +2411,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="skep-plugin-project.SkepPluginProject.addCompileCommand"></a>
+##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="@skeptools/skep-plugin-project.SkepPluginProject.addCompileCommand"></a>
 
 ```typescript
 public addCompileCommand(commands: string): void
@@ -2419,13 +2419,13 @@ public addCompileCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="skep-plugin-project.SkepPluginProject.addCompileCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="@skeptools/skep-plugin-project.SkepPluginProject.addCompileCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### `addDeps` <a name="addDeps" id="skep-plugin-project.SkepPluginProject.addDeps"></a>
+##### `addDeps` <a name="addDeps" id="@skeptools/skep-plugin-project.SkepPluginProject.addDeps"></a>
 
 ```typescript
 public addDeps(deps: string): void
@@ -2433,7 +2433,7 @@ public addDeps(deps: string): void
 
 Defines normal dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="skep-plugin-project.SkepPluginProject.addDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="@skeptools/skep-plugin-project.SkepPluginProject.addDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -2447,7 +2447,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addDevDeps` <a name="addDevDeps" id="skep-plugin-project.SkepPluginProject.addDevDeps"></a>
+##### `addDevDeps` <a name="addDevDeps" id="@skeptools/skep-plugin-project.SkepPluginProject.addDevDeps"></a>
 
 ```typescript
 public addDevDeps(deps: string): void
@@ -2455,7 +2455,7 @@ public addDevDeps(deps: string): void
 
 Defines development/test dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="skep-plugin-project.SkepPluginProject.addDevDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="@skeptools/skep-plugin-project.SkepPluginProject.addDevDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -2469,7 +2469,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addFields` <a name="addFields" id="skep-plugin-project.SkepPluginProject.addFields"></a>
+##### `addFields` <a name="addFields" id="@skeptools/skep-plugin-project.SkepPluginProject.addFields"></a>
 
 ```typescript
 public addFields(fields: {[ key: string ]: any}): void
@@ -2477,7 +2477,7 @@ public addFields(fields: {[ key: string ]: any}): void
 
 Directly set fields in `package.json`.
 
-###### `fields`<sup>Required</sup> <a name="fields" id="skep-plugin-project.SkepPluginProject.addFields.parameter.fields"></a>
+###### `fields`<sup>Required</sup> <a name="fields" id="@skeptools/skep-plugin-project.SkepPluginProject.addFields.parameter.fields"></a>
 
 - *Type:* {[ key: string ]: any}
 
@@ -2485,7 +2485,7 @@ The fields to set.
 
 ---
 
-##### `addKeywords` <a name="addKeywords" id="skep-plugin-project.SkepPluginProject.addKeywords"></a>
+##### `addKeywords` <a name="addKeywords" id="@skeptools/skep-plugin-project.SkepPluginProject.addKeywords"></a>
 
 ```typescript
 public addKeywords(keywords: string): void
@@ -2493,7 +2493,7 @@ public addKeywords(keywords: string): void
 
 Adds keywords to package.json (deduplicated).
 
-###### `keywords`<sup>Required</sup> <a name="keywords" id="skep-plugin-project.SkepPluginProject.addKeywords.parameter.keywords"></a>
+###### `keywords`<sup>Required</sup> <a name="keywords" id="@skeptools/skep-plugin-project.SkepPluginProject.addKeywords.parameter.keywords"></a>
 
 - *Type:* string
 
@@ -2501,7 +2501,7 @@ The keywords to add.
 
 ---
 
-##### `addPeerDeps` <a name="addPeerDeps" id="skep-plugin-project.SkepPluginProject.addPeerDeps"></a>
+##### `addPeerDeps` <a name="addPeerDeps" id="@skeptools/skep-plugin-project.SkepPluginProject.addPeerDeps"></a>
 
 ```typescript
 public addPeerDeps(deps: string): void
@@ -2513,7 +2513,7 @@ When adding peer dependencies, a devDependency will also be added on the
 pinned version of the declared peer. This will ensure that you are testing
 your code against the minimum version required from your consumers.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="skep-plugin-project.SkepPluginProject.addPeerDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="@skeptools/skep-plugin-project.SkepPluginProject.addPeerDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -2527,7 +2527,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### ~~`addTestCommand`~~ <a name="addTestCommand" id="skep-plugin-project.SkepPluginProject.addTestCommand"></a>
+##### ~~`addTestCommand`~~ <a name="addTestCommand" id="@skeptools/skep-plugin-project.SkepPluginProject.addTestCommand"></a>
 
 ```typescript
 public addTestCommand(commands: string): void
@@ -2535,13 +2535,13 @@ public addTestCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="skep-plugin-project.SkepPluginProject.addTestCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="@skeptools/skep-plugin-project.SkepPluginProject.addTestCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasScript` <a name="hasScript" id="skep-plugin-project.SkepPluginProject.hasScript"></a>
+##### `hasScript` <a name="hasScript" id="@skeptools/skep-plugin-project.SkepPluginProject.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
@@ -2549,7 +2549,7 @@ public hasScript(name: string): boolean
 
 Indicates if a script by the name name is defined.
 
-###### `name`<sup>Required</sup> <a name="name" id="skep-plugin-project.SkepPluginProject.hasScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="@skeptools/skep-plugin-project.SkepPluginProject.hasScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -2557,7 +2557,7 @@ The name of the script.
 
 ---
 
-##### `removeScript` <a name="removeScript" id="skep-plugin-project.SkepPluginProject.removeScript"></a>
+##### `removeScript` <a name="removeScript" id="@skeptools/skep-plugin-project.SkepPluginProject.removeScript"></a>
 
 ```typescript
 public removeScript(name: string): void
@@ -2565,7 +2565,7 @@ public removeScript(name: string): void
 
 Removes the npm script (always successful).
 
-###### `name`<sup>Required</sup> <a name="name" id="skep-plugin-project.SkepPluginProject.removeScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="@skeptools/skep-plugin-project.SkepPluginProject.removeScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -2573,7 +2573,7 @@ The name of the script.
 
 ---
 
-##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="skep-plugin-project.SkepPluginProject.renderWorkflowSetup"></a>
+##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="@skeptools/skep-plugin-project.SkepPluginProject.renderWorkflowSetup"></a>
 
 ```typescript
 public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
@@ -2581,7 +2581,7 @@ public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
 
 Returns the set of workflow steps which should be executed to bootstrap a workflow.
 
-###### `options`<sup>Optional</sup> <a name="options" id="skep-plugin-project.SkepPluginProject.renderWorkflowSetup.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@skeptools/skep-plugin-project.SkepPluginProject.renderWorkflowSetup.parameter.options"></a>
 
 - *Type:* projen.javascript.RenderWorkflowSetupOptions
 
@@ -2589,7 +2589,7 @@ Options.
 
 ---
 
-##### `setScript` <a name="setScript" id="skep-plugin-project.SkepPluginProject.setScript"></a>
+##### `setScript` <a name="setScript" id="@skeptools/skep-plugin-project.SkepPluginProject.setScript"></a>
 
 ```typescript
 public setScript(name: string, command: string): void
@@ -2597,7 +2597,7 @@ public setScript(name: string, command: string): void
 
 Replaces the contents of an npm package.json script.
 
-###### `name`<sup>Required</sup> <a name="name" id="skep-plugin-project.SkepPluginProject.setScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="@skeptools/skep-plugin-project.SkepPluginProject.setScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -2605,7 +2605,7 @@ The script name.
 
 ---
 
-###### `command`<sup>Required</sup> <a name="command" id="skep-plugin-project.SkepPluginProject.setScript.parameter.command"></a>
+###### `command`<sup>Required</sup> <a name="command" id="@skeptools/skep-plugin-project.SkepPluginProject.setScript.parameter.command"></a>
 
 - *Type:* string
 
@@ -2618,69 +2618,69 @@ The command to execute.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.name">name</a></code> | <code>string</code> | Project name. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this pacakge. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.name">name</a></code> | <code>string</code> | Project name. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this pacakge. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
 
 ---
 
-##### `buildTask`<sup>Required</sup> <a name="buildTask" id="skep-plugin-project.SkepPluginProject.property.buildTask"></a>
+##### `buildTask`<sup>Required</sup> <a name="buildTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.buildTask"></a>
 
 ```typescript
 public readonly buildTask: Task;
@@ -2690,7 +2690,7 @@ public readonly buildTask: Task;
 
 ---
 
-##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="skep-plugin-project.SkepPluginProject.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="@skeptools/skep-plugin-project.SkepPluginProject.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -2702,7 +2702,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `compileTask`<sup>Required</sup> <a name="compileTask" id="skep-plugin-project.SkepPluginProject.property.compileTask"></a>
+##### `compileTask`<sup>Required</sup> <a name="compileTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.compileTask"></a>
 
 ```typescript
 public readonly compileTask: Task;
@@ -2712,7 +2712,7 @@ public readonly compileTask: Task;
 
 ---
 
-##### `components`<sup>Required</sup> <a name="components" id="skep-plugin-project.SkepPluginProject.property.components"></a>
+##### `components`<sup>Required</sup> <a name="components" id="@skeptools/skep-plugin-project.SkepPluginProject.property.components"></a>
 
 ```typescript
 public readonly components: Component[];
@@ -2724,7 +2724,7 @@ Returns all the components within this project.
 
 ---
 
-##### `deps`<sup>Required</sup> <a name="deps" id="skep-plugin-project.SkepPluginProject.property.deps"></a>
+##### `deps`<sup>Required</sup> <a name="deps" id="@skeptools/skep-plugin-project.SkepPluginProject.property.deps"></a>
 
 ```typescript
 public readonly deps: Dependencies;
@@ -2736,7 +2736,7 @@ Project dependencies.
 
 ---
 
-##### `ejected`<sup>Required</sup> <a name="ejected" id="skep-plugin-project.SkepPluginProject.property.ejected"></a>
+##### `ejected`<sup>Required</sup> <a name="ejected" id="@skeptools/skep-plugin-project.SkepPluginProject.property.ejected"></a>
 
 ```typescript
 public readonly ejected: boolean;
@@ -2748,7 +2748,7 @@ Whether or not the project is being ejected.
 
 ---
 
-##### `files`<sup>Required</sup> <a name="files" id="skep-plugin-project.SkepPluginProject.property.files"></a>
+##### `files`<sup>Required</sup> <a name="files" id="@skeptools/skep-plugin-project.SkepPluginProject.property.files"></a>
 
 ```typescript
 public readonly files: FileBase[];
@@ -2760,7 +2760,7 @@ All files in this project.
 
 ---
 
-##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="skep-plugin-project.SkepPluginProject.property.gitattributes"></a>
+##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="@skeptools/skep-plugin-project.SkepPluginProject.property.gitattributes"></a>
 
 ```typescript
 public readonly gitattributes: GitAttributesFile;
@@ -2772,7 +2772,7 @@ The .gitattributes file for this repository.
 
 ---
 
-##### `gitignore`<sup>Required</sup> <a name="gitignore" id="skep-plugin-project.SkepPluginProject.property.gitignore"></a>
+##### `gitignore`<sup>Required</sup> <a name="gitignore" id="@skeptools/skep-plugin-project.SkepPluginProject.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: IgnoreFile;
@@ -2784,7 +2784,7 @@ public readonly gitignore: IgnoreFile;
 
 ---
 
-##### `logger`<sup>Required</sup> <a name="logger" id="skep-plugin-project.SkepPluginProject.property.logger"></a>
+##### `logger`<sup>Required</sup> <a name="logger" id="@skeptools/skep-plugin-project.SkepPluginProject.property.logger"></a>
 
 ```typescript
 public readonly logger: Logger;
@@ -2796,7 +2796,7 @@ Logging utilities.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="skep-plugin-project.SkepPluginProject.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@skeptools/skep-plugin-project.SkepPluginProject.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -2808,7 +2808,7 @@ Project name.
 
 ---
 
-##### `outdir`<sup>Required</sup> <a name="outdir" id="skep-plugin-project.SkepPluginProject.property.outdir"></a>
+##### `outdir`<sup>Required</sup> <a name="outdir" id="@skeptools/skep-plugin-project.SkepPluginProject.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -2820,7 +2820,7 @@ Absolute output directory of this project.
 
 ---
 
-##### `packageTask`<sup>Required</sup> <a name="packageTask" id="skep-plugin-project.SkepPluginProject.property.packageTask"></a>
+##### `packageTask`<sup>Required</sup> <a name="packageTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.packageTask"></a>
 
 ```typescript
 public readonly packageTask: Task;
@@ -2830,7 +2830,7 @@ public readonly packageTask: Task;
 
 ---
 
-##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="skep-plugin-project.SkepPluginProject.property.postCompileTask"></a>
+##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.postCompileTask"></a>
 
 ```typescript
 public readonly postCompileTask: Task;
@@ -2840,7 +2840,7 @@ public readonly postCompileTask: Task;
 
 ---
 
-##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="skep-plugin-project.SkepPluginProject.property.preCompileTask"></a>
+##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.preCompileTask"></a>
 
 ```typescript
 public readonly preCompileTask: Task;
@@ -2850,7 +2850,7 @@ public readonly preCompileTask: Task;
 
 ---
 
-##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="skep-plugin-project.SkepPluginProject.property.projectBuild"></a>
+##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="@skeptools/skep-plugin-project.SkepPluginProject.property.projectBuild"></a>
 
 ```typescript
 public readonly projectBuild: ProjectBuild;
@@ -2862,7 +2862,7 @@ Manages the build process of the project.
 
 ---
 
-##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="skep-plugin-project.SkepPluginProject.property.projenCommand"></a>
+##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="@skeptools/skep-plugin-project.SkepPluginProject.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -2874,7 +2874,7 @@ The command to use in order to run the projen CLI.
 
 ---
 
-##### `root`<sup>Required</sup> <a name="root" id="skep-plugin-project.SkepPluginProject.property.root"></a>
+##### `root`<sup>Required</sup> <a name="root" id="@skeptools/skep-plugin-project.SkepPluginProject.property.root"></a>
 
 ```typescript
 public readonly root: Project;
@@ -2886,7 +2886,7 @@ The root project.
 
 ---
 
-##### `tasks`<sup>Required</sup> <a name="tasks" id="skep-plugin-project.SkepPluginProject.property.tasks"></a>
+##### `tasks`<sup>Required</sup> <a name="tasks" id="@skeptools/skep-plugin-project.SkepPluginProject.property.tasks"></a>
 
 ```typescript
 public readonly tasks: Tasks;
@@ -2898,7 +2898,7 @@ Project tasks.
 
 ---
 
-##### `testTask`<sup>Required</sup> <a name="testTask" id="skep-plugin-project.SkepPluginProject.property.testTask"></a>
+##### `testTask`<sup>Required</sup> <a name="testTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.testTask"></a>
 
 ```typescript
 public readonly testTask: Task;
@@ -2908,7 +2908,7 @@ public readonly testTask: Task;
 
 ---
 
-##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="skep-plugin-project.SkepPluginProject.property.defaultTask"></a>
+##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.defaultTask"></a>
 
 ```typescript
 public readonly defaultTask: Task;
@@ -2923,7 +2923,7 @@ the project is being ejected.
 
 ---
 
-##### `initProject`<sup>Optional</sup> <a name="initProject" id="skep-plugin-project.SkepPluginProject.property.initProject"></a>
+##### `initProject`<sup>Optional</sup> <a name="initProject" id="@skeptools/skep-plugin-project.SkepPluginProject.property.initProject"></a>
 
 ```typescript
 public readonly initProject: InitProject;
@@ -2939,7 +2939,7 @@ FQN of the project type.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="skep-plugin-project.SkepPluginProject.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="@skeptools/skep-plugin-project.SkepPluginProject.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -2953,7 +2953,7 @@ If undefined, this is the root project.
 
 ---
 
-##### `projectType`<sup>Required</sup> <a name="projectType" id="skep-plugin-project.SkepPluginProject.property.projectType"></a>
+##### `projectType`<sup>Required</sup> <a name="projectType" id="@skeptools/skep-plugin-project.SkepPluginProject.property.projectType"></a>
 
 ```typescript
 public readonly projectType: ProjectType;
@@ -2963,7 +2963,7 @@ public readonly projectType: ProjectType;
 
 ---
 
-##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="skep-plugin-project.SkepPluginProject.property.autoApprove"></a>
+##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="@skeptools/skep-plugin-project.SkepPluginProject.property.autoApprove"></a>
 
 ```typescript
 public readonly autoApprove: AutoApprove;
@@ -2975,7 +2975,7 @@ Auto approve set up for this project.
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="skep-plugin-project.SkepPluginProject.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="@skeptools/skep-plugin-project.SkepPluginProject.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: DevContainer;
@@ -2989,7 +2989,7 @@ This will be `undefined` if devContainer boolean is false
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="skep-plugin-project.SkepPluginProject.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="@skeptools/skep-plugin-project.SkepPluginProject.property.github"></a>
 
 ```typescript
 public readonly github: GitHub;
@@ -3003,7 +3003,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="skep-plugin-project.SkepPluginProject.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="@skeptools/skep-plugin-project.SkepPluginProject.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: Gitpod;
@@ -3017,7 +3017,7 @@ This will be `undefined` if gitpod boolean is false
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="skep-plugin-project.SkepPluginProject.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="@skeptools/skep-plugin-project.SkepPluginProject.property.vscode"></a>
 
 ```typescript
 public readonly vscode: VsCode;
@@ -3031,7 +3031,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="skep-plugin-project.SkepPluginProject.property.allowLibraryDependencies"></a>
+##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="@skeptools/skep-plugin-project.SkepPluginProject.property.allowLibraryDependencies"></a>
 
 - *Deprecated:* use `package.allowLibraryDependencies`
 
@@ -3043,7 +3043,7 @@ public readonly allowLibraryDependencies: boolean;
 
 ---
 
-##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="skep-plugin-project.SkepPluginProject.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="@skeptools/skep-plugin-project.SkepPluginProject.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -3059,7 +3059,7 @@ tarball will be placed under `dist/js/boom-boom-1.2.3.tg`.
 
 ---
 
-##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="skep-plugin-project.SkepPluginProject.property.artifactsJavascriptDirectory"></a>
+##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="@skeptools/skep-plugin-project.SkepPluginProject.property.artifactsJavascriptDirectory"></a>
 
 ```typescript
 public readonly artifactsJavascriptDirectory: string;
@@ -3071,7 +3071,7 @@ The location of the npm tarball after build (`${artifactsDirectory}/js`).
 
 ---
 
-##### `bundler`<sup>Required</sup> <a name="bundler" id="skep-plugin-project.SkepPluginProject.property.bundler"></a>
+##### `bundler`<sup>Required</sup> <a name="bundler" id="@skeptools/skep-plugin-project.SkepPluginProject.property.bundler"></a>
 
 ```typescript
 public readonly bundler: Bundler;
@@ -3081,7 +3081,7 @@ public readonly bundler: Bundler;
 
 ---
 
-##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="skep-plugin-project.SkepPluginProject.property.entrypoint"></a>
+##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="@skeptools/skep-plugin-project.SkepPluginProject.property.entrypoint"></a>
 
 - *Deprecated:* use `package.entrypoint`
 
@@ -3093,7 +3093,7 @@ public readonly entrypoint: string;
 
 ---
 
-##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="skep-plugin-project.SkepPluginProject.property.manifest"></a>
+##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="@skeptools/skep-plugin-project.SkepPluginProject.property.manifest"></a>
 
 - *Deprecated:* use `package.addField(x, y)`
 
@@ -3105,7 +3105,7 @@ public readonly manifest: any;
 
 ---
 
-##### `package`<sup>Required</sup> <a name="package" id="skep-plugin-project.SkepPluginProject.property.package"></a>
+##### `package`<sup>Required</sup> <a name="package" id="@skeptools/skep-plugin-project.SkepPluginProject.property.package"></a>
 
 ```typescript
 public readonly package: NodePackage;
@@ -3117,7 +3117,7 @@ API for managing the node package.
 
 ---
 
-##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="skep-plugin-project.SkepPluginProject.property.packageManager"></a>
+##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="@skeptools/skep-plugin-project.SkepPluginProject.property.packageManager"></a>
 
 - *Deprecated:* use `package.packageManager`
 
@@ -3131,7 +3131,7 @@ The package manager to use.
 
 ---
 
-##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="skep-plugin-project.SkepPluginProject.property.runScriptCommand"></a>
+##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="@skeptools/skep-plugin-project.SkepPluginProject.property.runScriptCommand"></a>
 
 ```typescript
 public readonly runScriptCommand: string;
@@ -3143,7 +3143,7 @@ The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the p
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="skep-plugin-project.SkepPluginProject.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="@skeptools/skep-plugin-project.SkepPluginProject.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: AutoMerge;
@@ -3155,7 +3155,7 @@ Component that sets up mergify for merging approved pull requests.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="skep-plugin-project.SkepPluginProject.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="@skeptools/skep-plugin-project.SkepPluginProject.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: BuildWorkflow;
@@ -3169,7 +3169,7 @@ The PR build GitHub workflow.
 
 ---
 
-##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="skep-plugin-project.SkepPluginProject.property.buildWorkflowJobId"></a>
+##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="@skeptools/skep-plugin-project.SkepPluginProject.property.buildWorkflowJobId"></a>
 
 ```typescript
 public readonly buildWorkflowJobId: string;
@@ -3181,7 +3181,7 @@ The job ID of the build workflow.
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="skep-plugin-project.SkepPluginProject.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="@skeptools/skep-plugin-project.SkepPluginProject.property.jest"></a>
 
 ```typescript
 public readonly jest: Jest;
@@ -3193,7 +3193,7 @@ The Jest configuration (if enabled).
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="skep-plugin-project.SkepPluginProject.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="@skeptools/skep-plugin-project.SkepPluginProject.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -3205,7 +3205,7 @@ Maximum node version required by this pacakge.
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="skep-plugin-project.SkepPluginProject.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="@skeptools/skep-plugin-project.SkepPluginProject.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -3217,7 +3217,7 @@ Minimum node.js version required by this package.
 
 ---
 
-##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="skep-plugin-project.SkepPluginProject.property.npmignore"></a>
+##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="@skeptools/skep-plugin-project.SkepPluginProject.property.npmignore"></a>
 
 ```typescript
 public readonly npmignore: IgnoreFile;
@@ -3229,7 +3229,7 @@ The .npmignore file.
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="skep-plugin-project.SkepPluginProject.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="@skeptools/skep-plugin-project.SkepPluginProject.property.prettier"></a>
 
 ```typescript
 public readonly prettier: Prettier;
@@ -3239,7 +3239,7 @@ public readonly prettier: Prettier;
 
 ---
 
-##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="skep-plugin-project.SkepPluginProject.property.publisher"></a>
+##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="@skeptools/skep-plugin-project.SkepPluginProject.property.publisher"></a>
 
 - *Deprecated:* use `release.publisher`.
 
@@ -3256,7 +3256,7 @@ release workflow.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="skep-plugin-project.SkepPluginProject.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="@skeptools/skep-plugin-project.SkepPluginProject.property.release"></a>
 
 ```typescript
 public readonly release: Release;
@@ -3268,7 +3268,7 @@ Release management.
 
 ---
 
-##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="skep-plugin-project.SkepPluginProject.property.upgradeWorkflow"></a>
+##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="@skeptools/skep-plugin-project.SkepPluginProject.property.upgradeWorkflow"></a>
 
 ```typescript
 public readonly upgradeWorkflow: UpgradeDependencies;
@@ -3280,7 +3280,7 @@ The upgrade workflow.
 
 ---
 
-##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="skep-plugin-project.SkepPluginProject.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="@skeptools/skep-plugin-project.SkepPluginProject.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -3290,7 +3290,7 @@ public readonly docsDirectory: string;
 
 ---
 
-##### `libdir`<sup>Required</sup> <a name="libdir" id="skep-plugin-project.SkepPluginProject.property.libdir"></a>
+##### `libdir`<sup>Required</sup> <a name="libdir" id="@skeptools/skep-plugin-project.SkepPluginProject.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -3302,7 +3302,7 @@ The directory in which compiled .js files reside.
 
 ---
 
-##### `srcdir`<sup>Required</sup> <a name="srcdir" id="skep-plugin-project.SkepPluginProject.property.srcdir"></a>
+##### `srcdir`<sup>Required</sup> <a name="srcdir" id="@skeptools/skep-plugin-project.SkepPluginProject.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -3314,7 +3314,7 @@ The directory in which the .ts sources reside.
 
 ---
 
-##### `testdir`<sup>Required</sup> <a name="testdir" id="skep-plugin-project.SkepPluginProject.property.testdir"></a>
+##### `testdir`<sup>Required</sup> <a name="testdir" id="@skeptools/skep-plugin-project.SkepPluginProject.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -3326,7 +3326,7 @@ The directory in which tests reside.
 
 ---
 
-##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="skep-plugin-project.SkepPluginProject.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="@skeptools/skep-plugin-project.SkepPluginProject.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfig;
@@ -3338,7 +3338,7 @@ A typescript configuration file which covers all files (sources, tests, projen).
 
 ---
 
-##### `watchTask`<sup>Required</sup> <a name="watchTask" id="skep-plugin-project.SkepPluginProject.property.watchTask"></a>
+##### `watchTask`<sup>Required</sup> <a name="watchTask" id="@skeptools/skep-plugin-project.SkepPluginProject.property.watchTask"></a>
 
 ```typescript
 public readonly watchTask: Task;
@@ -3350,7 +3350,7 @@ The "watch" task.
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="skep-plugin-project.SkepPluginProject.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="@skeptools/skep-plugin-project.SkepPluginProject.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -3360,7 +3360,7 @@ public readonly docgen: boolean;
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="skep-plugin-project.SkepPluginProject.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="@skeptools/skep-plugin-project.SkepPluginProject.property.eslint"></a>
 
 ```typescript
 public readonly eslint: Eslint;
@@ -3370,7 +3370,7 @@ public readonly eslint: Eslint;
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="skep-plugin-project.SkepPluginProject.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="@skeptools/skep-plugin-project.SkepPluginProject.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfig;
@@ -3380,7 +3380,7 @@ public readonly tsconfig: TypescriptConfig;
 
 ---
 
-##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="skep-plugin-project.SkepPluginProject.property.tsconfigEslint"></a>
+##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="@skeptools/skep-plugin-project.SkepPluginProject.property.tsconfigEslint"></a>
 
 ```typescript
 public readonly tsconfigEslint: TypescriptConfig;
@@ -3394,11 +3394,11 @@ public readonly tsconfigEslint: TypescriptConfig;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#skep-plugin-project.SkepPluginProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
+| <code><a href="#@skeptools/skep-plugin-project.SkepPluginProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
 
 ---
 
-##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="skep-plugin-project.SkepPluginProject.property.DEFAULT_TASK"></a>
+##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="@skeptools/skep-plugin-project.SkepPluginProject.property.DEFAULT_TASK"></a>
 
 ```typescript
 public readonly DEFAULT_TASK: string;
