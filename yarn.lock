@@ -740,10 +740,10 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
-"@rlmartin-projen/projen-project@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@rlmartin-projen/projen-project/-/projen-project-0.0.10.tgz#320de75c8adb70adf145e16299d3407e471a5c49"
-  integrity sha512-5aSgHRYYaT035iy1GTz18vKqIRZ8IeB+X7s/7WzCajgW+upFWljEDj0s/Gu2f/emCjK9MEsjzaHzIngYcz3IjQ==
+"@rlmartin-projen/projen-project@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@rlmartin-projen/projen-project/-/projen-project-0.0.12.tgz#7ac78580c361d220808e56da92f762edf8c6a822"
+  integrity sha512-9KJrHeQFc/QY2y3NUgOVD24IytxUgQtexgqMxvRZic40ynzC68HmnTUjDlQsER7mh3+HtlqTu+pKvqDtWPHjZg==
   dependencies:
     liquidjs "~9"
     projen "~0"

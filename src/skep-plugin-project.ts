@@ -1,3 +1,4 @@
+import * as path from 'path';
 import { addFiles, allCases, loadSettings, packageToString, parsePackageName, squashPackages } from '@rlmartin-projen/projen-project';
 import { typescript } from 'projen';
 
@@ -30,7 +31,7 @@ export class SkepPluginProject extends typescript.TypeScriptProject {
       ]),
       pluginName: allCases(pluginName),
     };
-    const { options: projectOpts, files } = loadSettings(tempOpts);
+    const { options: projectOpts, files } = loadSettings(tempOpts, path.join(__dirname, '../files'));
     super(projectOpts);
     addFiles(this, files);
     this.addDeps(`${options.cdktfProviderPackage}${options.cdktfProviderPackageVersion ? '@' : ''}${options.cdktfProviderPackageVersion ?? ''}`);

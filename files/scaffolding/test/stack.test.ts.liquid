@@ -2,6 +2,7 @@ import { OrganizationProps, PersonProps, SkepStack, TeamProps } from '@skeptools
 import { App } from 'cdktf';
 import { Factory } from '../src';
 
+type TeamType = 'team' | 'guild';
 type RoleType = 'engineering' | 'product';
 
 const fooBar = {
@@ -39,7 +40,7 @@ const fooTeam = {
       foo: 'bar',
     },
   },
-} as TeamProps<Integrations, PeopleKeys>;
+} as TeamProps<Integrations, PeopleKeys, TeamType>;
 
 const barGuild = {
   name: 'Bar',
@@ -49,7 +50,7 @@ const barGuild = {
     {{pluginName.camel}}: {},
   },
   type: 'guild',
-} as TeamProps<Integrations, PeopleKeys>;
+} as TeamProps<Integrations, PeopleKeys, TeamType>;
 
 const teams = { fooTeam, barGuild };
 
@@ -65,14 +66,14 @@ const organization: OrganizationProps<Integrations> = {
 type PeopleKeys = Extract<keyof typeof people, string>;
 type TeamKeys = Extract<keyof typeof teams, string>;
 interface Integrations {
-    {{pluginName.camel}}: Factory<PeopleKeys, RoleType>;
+    {{pluginName.camel}}: Factory<PeopleKeys, TeamType, RoleType>;
 }
 
-export class TestSkepStack extends SkepStack<Integrations, PeopleKeys, TeamKeys, RoleType> {
+export class TestSkepStack extends SkepStack<Integrations, PeopleKeys, TeamKeys, TeamType, RoleType> {
   get defaultConfig() {
     return {
       team: {
-        foo: 'bar',
+        type: 'team' as TeamType,
       },
     };
   }
@@ -80,9 +81,9 @@ export class TestSkepStack extends SkepStack<Integrations, PeopleKeys, TeamKeys,
   load(
     orgConfig: OrganizationProps<Integrations>,
     peopleConfig: Record<PeopleKeys, PersonProps<Integrations, RoleType>>,
-    teamConfig: Record<TeamKeys, TeamProps<Integrations, PeopleKeys>>,
+    teamConfig: Record<TeamKeys, TeamProps<Integrations, PeopleKeys, TeamType>>,
   ): Integrations {
-    const {{pluginName.camel}} = new Factory<PeopleKeys, RoleType>(
+    const {{pluginName.camel}} = new Factory<PeopleKeys, TeamType, RoleType>(
       this,
       '{{pluginName.camel}}',
       this.getOrganizationConfig(orgConfig, '{{pluginName.camel}}'),
