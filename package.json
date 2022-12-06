@@ -58,11 +58,11 @@
     "typescript": "^4.9.3"
   },
   "peerDependencies": {
-    "@rlmartin-projen/projen-project": "^0.0.11",
+    "@rlmartin-projen/projen-project": "^0.0.12",
     "projen": "~0"
   },
   "dependencies": {
-    "@rlmartin-projen/projen-project": "^0.0.11",
+    "@rlmartin-projen/projen-project": "^0.0.12",
     "liquidjs": "~9",
     "projen": "~0"
   },
