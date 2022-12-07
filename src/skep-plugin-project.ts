@@ -36,7 +36,7 @@ export class SkepPluginProject extends typescript.TypeScriptProject {
     addFiles(this, files);
     this.addDeps(`${options.cdktfProviderPackage}${options.cdktfProviderPackageVersion ? '@' : ''}${options.cdktfProviderPackageVersion ?? ''}`);
     // Add non-templated resources here
-    this.gitignore.include(
+    this.gitignore.exclude(
       '*.d.ts',
       '*.js',
       'cdktf.out',
