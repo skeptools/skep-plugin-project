@@ -29,6 +29,15 @@ export class SkepPluginProject extends typescript.TypeScriptProject {
         'cdktf@~0',
         'constructs@~10',
       ]),
+      entrypoint: options.entrypoint ?? 'dist/index.js',
+      releaseBranches: options.releaseBranches ?? {
+        dev: { prerelease: 'dev', npmDistTag: 'dev', majorVersion: options.majorVersion ?? 0 },
+      },
+      depsUpgradeOptions: options.depsUpgradeOptions ?? {
+        workflowOptions: {
+          branches: [options.defaultReleaseBranch],
+        },
+      },
       pluginName: allCases(pluginName),
     };
     const { options: projectOpts, files } = loadSettings(tempOpts, path.join(__dirname, '../files'));
@@ -43,5 +52,6 @@ export class SkepPluginProject extends typescript.TypeScriptProject {
       'terraform.tfstate*',
       '.gen',
     );
+    this.compileTask.exec('tsc --declaration');
   }
 }
