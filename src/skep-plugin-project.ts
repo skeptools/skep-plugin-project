@@ -25,7 +25,7 @@ export class SkepPluginProject extends typescript.TypeScriptProject {
       name: packageToString({ org: packageName.org, name: `plugin-${pluginName.toLowerCase()}` }),
       deps: squashPackages([
         ...(options.deps ?? []),
-        '@skeptools/skep-core@~0',
+        '@skeptools/skep-core@0.0.8-dev.2',
         'cdktf@~0',
         'constructs@~10',
       ]),
